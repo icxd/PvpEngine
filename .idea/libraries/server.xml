@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="server">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Complete Hypixel Network Remake/Hub/server.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../Complete Hypixel Network Remake/Hub/server.jar!/" />
+    </SOURCES>
+  </library>
+</component>

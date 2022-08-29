@@ -1,0 +1,29 @@
+
+  ! - Important
+  * - Needed
+  ? - Maybe
+
+--------------------
+
+[!] (✘) Fix bows and protection
+[!] (✔) Add potions and enchanted golden apples to /shop
+[!] (✔) Add so you can purchase more than one item at once
+[!] (✔) Remake enchantment gui system
+[!] (✔) Create a working permissions system
+[!] (✘) Add tablist support for ranks and add nametags
+
+[*] (✔) Add more stuff to /shop in general
+[*] (✘) Add more enchantments to /enchant
+[*] (✔) Make /trash look better
+[*] (✔) Clear players inventory and give player pvp kit on death
+[*] (✘) Add K/D support to scoreboard
+[*] (✔) Add commands:
+    - (✔) /vanish
+    - (✔) /spy
+    - (✔) /vault
+[*] (✘) Custom region system
+
+[?] (✘) Add pets
+[?] (✘) Add MySQL support
+[?] (✘) Custom hologram system and npc system
+[?] (✘) Remove /kit

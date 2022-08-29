@@ -1,0 +1,16 @@
+pvp:
+  items:
+    - IRON_SWORD 0 1
+    - BOW 0 1
+    - POTION 16421 1
+    - POTION 16421 1
+    - POTION 16421 1
+    - POTION 16421 1
+    - POTION 16421 1
+    - POTION 16421 1
+    - ARROW 0 64
+  armor:
+    - IRON_HELMET 0 1
+    - IRON_CHESTPLATE 0 1
+    - IRON_LEGGINGS 0 1
+    - IRON_BOOTS 0 1

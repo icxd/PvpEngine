@@ -1,0 +1,23 @@
+name: PvpEngine
+version: 1.0.0
+main: me.icoding.pvpengine.PvpEngine
+author: ICoding
+
+commands:
+  sethub:
+  hub:
+  set:
+    aliases: [ setvalue ]
+  pvpengine:
+  gmc:
+  gms:
+  gmsp:
+  gma:
+  kit:
+  shop:
+  trash:
+  enchant:
+  spy:
+  vanish:
+    aliases: [v]
+  vault:

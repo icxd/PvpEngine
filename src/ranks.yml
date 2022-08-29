@@ -1,0 +1,12 @@
+player:
+  prefix: '&8<&7Player&8>'
+  name-color: '&7'
+  default: true
+  permissions:
+    - 'example'
+owner:
+  prefix: '&8<&4Owner&8>'
+  name-color: '&c'
+  default: false
+  permissions:
+    - '*'

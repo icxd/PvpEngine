@@ -1,0 +1,120 @@
+###########################################################################################
+#
+#       Placeholder:
+#       * %prefix%      -   The prefix.
+#       * %player%      -   The player's name.
+#       * %rank%        -   The player's current rank.
+#       * %name_color%  -   The player rank's name color.
+#       * %level%       -   The player's current level.
+#       * %message%     -   The chat message sent by the player.
+#       * %level_color% -   The player's current level with custom color coding.
+#
+#       You can use chat colors by doing '&' and then a color
+#       ( Link to all color codes: https://minecraft.tools/en/color-code.php )
+#
+###########################################################################################
+
+prefix: '&8[&9PvpEngine&8]&r'
+
+messages:
+  gamemode-change: '%prefix% &aChanged your gamemode to %s.'
+  gamemode-change-other: "%prefix% &aChanged %s's gamemode to %s."
+  hub-set: '%prefix% &aHub location set!'
+  teleporting: '%prefix% &bTeleporting...'
+  no-permission: '%prefix% &cYou do not have permission to use this command!'
+  no-args: '%prefix% &cNot enough arguments!'
+  no-rank: '%prefix% &cRank does not exist!'
+  reload: '%prefix% &aReloaded %s file(s).'
+  kit-not-found: '%prefix% &cKit not found!'
+  spy-format: '%prefix% &8(STAFF) &9%s&7 executed command &b%s&7.'
+  spy-enabled: '%prefix% &aEnabled spy mode.'
+  spy-disabled: '%prefix% &cDisabled spy mode.'
+  vanish-message-staff-join: '%prefix% &8(STAFF) &9%s&7 joined while vanished.'
+  vanish-message-staff-enabled: '%prefix% &8(STAFF) &9%s&7 vanished.'
+  vanish-message-staff-disabled: '%prefix% &8(STAFF) &9%s&7 reappeared.'
+  vanish-enabled: '%prefix% &aYou vanished.'
+  vanish-disabled: '%prefix% &cYou reappeared.'
+  nick-enabled: '%prefix% &aYou nicked as %s.'
+  nick-enabled-with-skin: "%prefix% &aYou nicked as %s with %s's skin."
+  nick-disabled: '%prefix% &cYou unnicked..'
+  invalid-player-name: '%prefix% %cInvalid player name, please try another name!'
+  kit-given: '%prefix% &bGave you the %s kit.'
+  purchase-item: '%prefix% &bYou bought a &9%s &bfor &6%s&b.'
+  enchanted-item: '%prefix% &bYou enchanted a &9%s &bwith &9%s &bfor &6%s&b.'
+  too-high-enchant-level: '%prefix% &cCannot enchant item cause max enchantment level is %s!'
+  unenchantable: '%prefix% &cYou cannot enchant that item!'
+  rank-kick: |-
+    &9&lPVPENGINE&r
+    &8&m---------------------------------------------------&r
+    &r
+    &cYou've been kicked from the server due to rank change.&r
+    &r
+    &9Why does this happen?&r
+    &7This is done because of how the permissions&r
+    &7system works.&r
+    &r
+    &9What now?&r
+    &7Just log back into the server like normal&r
+    &7and you should have your rank!&r
+    &r
+    &9Any other questions?&r
+    &b&nhttps://www.pvpengine.net/&r
+    &r
+    &8&m---------------------------------------------------&r
+  no-item-in-hand: '%prefix% &cYou need to hold an item in your hand to use this command!'
+  not-enough-coinage: '%prefix% &cYou do not have enough coins to purchase this item!'
+  not-enough-room: '%prefix% &cYou do not have enough free space in your inventory!'
+  player-not-found: '%prefix% &cPlayer not found!'
+  executed-by-console: '&c[!] This command can only be executed by a player.'
+  executed-by-player: '%prefix% &cThis command can only be executed by the console.'
+
+chat-format:
+  format: '%rank%&r %name_color%%player% &8[&r%level_color%&8] &7» &f%message%'
+  staff-chat-format: '&8(STAFF) &r%rank%&r %name_color%%player% &7» &f%message%'
+
+join-message:
+  enabled: true
+  display-default: false
+  display-if-vanished: false
+  message: '%prefix% &b%rank%&r %name_color%%player% &7joined the server.'
+
+leave-message:
+  enabled: true
+  display-default: false
+  display-if-vanished: false
+  message: '%prefix% &b%rank%&r %name_color%%player% &7left the server.'
+
+join-particle:
+  enabled: true
+  particle-type: 'FLAME'
+  offset:
+    x: 2
+    y: 2
+    z: 2
+  speed: 0.05
+  count: 400
+
+hub-location:
+  world: 'world'
+  x: 0
+  y: 0
+  z: 0
+  yaw: 0
+  pitch: 0
+
+level-gain-message:
+  - ''
+  - '          &9&lLEVEL GAINED &8&o(Level %level%)'
+  - ''
+
+scoreboard:
+  enabled: true
+  title: '&9&lPVPENGINE'
+  lines:
+    - ' '
+    - ' &7Kills: &b%kills%'
+    - ' &7Deaths: &b%deaths%'
+    - '  '
+
+random:
+  send-player-to-hub-on-join: true
